@@ -29,7 +29,7 @@ description: >-                        # used by seo meta and the atom feed
   python, fund, stock, crypto
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://tmttok.github.io/'
+url: 'https://tmttok.github.io'
 
 github:
   username: tmttok             # change to your github username
