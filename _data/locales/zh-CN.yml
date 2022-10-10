@@ -76,13 +76,3 @@ post:
 categories:
   category_measure: 个分类
   post_measure: 篇文章
-
-# @tmt add analytics
-analytics:
-  total_view: 本站总访问量：
-  total_visitor: ，访客数：
-  runtime: ，已运行：
-  day: 天
-  hour: 小时
-  minute: 分
-  second: 秒。

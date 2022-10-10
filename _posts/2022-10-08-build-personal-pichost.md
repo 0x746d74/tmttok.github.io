@@ -1,11 +1,11 @@
 ---
-title: 免费搭建个人图床
+title: 搭建个人图床
 date: 2022-10-08 13:51:00 +0800
 categories: [GitHub, PicHost]
 tags: [pichost]
 ---
 
-使用 [GitHub](https://github.com/) + [jsDelivr](https://www.jsdelivr.com/) 免费搭建高速稳定的图床，使用 [PicGo](https://github.com/Molunerfinn/PicGo) 上传图片。
+使用 [GitHub](https://github.com/){:target="_blank"} + [jsDelivr](https://www.jsdelivr.com/){:target="_blank"} 搭建高速稳定的图床，使用 [PicGo](https://github.com/Molunerfinn/PicGo){:target="_blank"} 上传图片。
 
 
 ## 1. 创建 GitHub 仓库

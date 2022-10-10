@@ -21,7 +21,9 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: '&nbsp;&nbsp;&nbsp;&nbsp;tmt'                          # the main title
+title: 'tmt'                          # the main title
+
+display_title: '&nbsp;&nbsp;&nbsp;&nbsp;tmt'                          # the sidebar main title
 
 tagline: '&nbsp;&nbsp;a DMOR blog'   # it will display as the sub-title
 
