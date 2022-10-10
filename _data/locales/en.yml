@@ -81,3 +81,13 @@ categories:
   post_measure:
     singular: post
     plural: posts
+
+# @tmt add analytics
+analytics:
+  total_view: 'view: '
+  total_visitor: ', visit: '
+  runtime: ', running: '
+  day: d
+  hour: h
+  minute: m
+  second: s.
