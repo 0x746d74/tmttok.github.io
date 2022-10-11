@@ -23,7 +23,7 @@ timezone: Asia/Shanghai
 
 title: 'tmt'                          # the main title
 
-display_title: '&nbsp;&nbsp;&nbsp;&nbsp;tmt'                          # the sidebar main title
+display_title: '&nbsp;&nbsp;&nbsp;&nbsp;tmt'                          # the sidebar title
 
 tagline: '&nbsp;&nbsp;a DMOR blog'   # it will display as the sub-title
 
