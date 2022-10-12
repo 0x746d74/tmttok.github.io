@@ -1,6 +1,5 @@
 ---
-permalink: /webstack/
-layout: nav
+layout: nav_default
 ---
 
 <div class="sidebar-menu toggle-others fixed">
@@ -16,16 +15,13 @@ layout: nav
                 </a>
             </div>
             <div class="mobile-menu-toggle visible-xs">
-                <a href="#" data-toggle="user-info-menu">
-                    <i class="linecons-cog"></i>
-                </a>
                 <a href="#" data-toggle="mobile-menu">
                     <i class="fa-bars"></i>
                 </a>
             </div>
         </header>
         <ul id="main-menu" class="main-menu">
-            {% for category in site.data.webstack %}
+            {% for category in site.data.navs[page.nav_name] %}
             <li>
                 {% if category.sub %}
                 <a>
@@ -52,28 +48,38 @@ layout: nav
 
             <br >
             <br >
-            <li style="list-style: none;"><a><span id="busuanzi_container_site_uv">总访客数：<span id="busuanzi_value_site_uv"></span>人</span></a></li>
-            <li style="list-style: none;"><a><span id="busuanzi_container_site_pv">总访问量：<span id="busuanzi_value_site_pv"></span>次</span></a></li>
-            <li style="list-style: none;">
-            <a><span id="runtime_span">已运行：0天0小时0分0秒</span></a>
-            <script type="text/javascript">
-                function show_runtime() {
-                window.setTimeout("show_runtime()", 1000);
-                X = new Date("10/8/2022 11:06:04");
-                Y = new Date();
-                T = (Y.getTime() - X.getTime());
-                M = 24 * 60 * 60 * 1000;
-                a = T / M;
-                A = Math.floor(a);
-                b = (a - A) * 24;
-                B = Math.floor(b);
-                c = (b - B) * 60;
-                C = Math.floor((b - B) * 60);
-                D = Math.floor((c - C) * 60);
-                document.getElementById("runtime_span").innerHTML = "已运行：" + A + "天" + B + "小时" + C + "分" + D + "秒"
-                }
-                show_runtime();
-            </script>
+            <li>
+                <a>
+                    <span id="busuanzi_container_site_uv">总访客数：<span id="busuanzi_value_site_uv"></span>人</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span id="busuanzi_container_site_pv">总访问量：<span id="busuanzi_value_site_pv"></span>次</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span id="runtime_span">已运行：0天0小时0分0秒</span>
+                    <script type="text/javascript">
+                        function show_runtime() {
+                        window.setTimeout("show_runtime()", 1000);
+                        X = new Date("10/8/2022 11:06:04");
+                        Y = new Date();
+                        T = (Y.getTime() - X.getTime());
+                        M = 24 * 60 * 60 * 1000;
+                        a = T / M;
+                        A = Math.floor(a);
+                        b = (a - A) * 24;
+                        B = Math.floor(b);
+                        c = (b - B) * 60;
+                        C = Math.floor((b - B) * 60);
+                        D = Math.floor((c - C) * 60);
+                        document.getElementById("runtime_span").innerHTML = "已运行：" + A + "天" + B + "小时" + C + "分" + D + "秒"
+                        }
+                        show_runtime();
+                    </script>
+                </a>
             </li>
         </ul>
     </div>
@@ -92,7 +98,7 @@ layout: nav
         </ul>
     </nav>
 
-    {% for category in site.data.webstack %}
+    {% for category in site.data.navs[page.nav_name] %}
         {% if category.sub %}
             {% for sub_category in category.sub %}
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="{{ sub_category.name }}"></i>{{ sub_category.name }}</h4>

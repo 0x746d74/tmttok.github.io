@@ -139,6 +139,10 @@ collections:
   tabs:
     output: true
     sort_by: order
+  drafts:
+    output: true
+  navs:
+    output: true
 
 defaults:
   - scope:
@@ -153,8 +157,12 @@ defaults:
       permalink: /posts/:title/
   - scope:
       path: _drafts
+      type: drafts
     values:
+      layout: post
       comments: false
+      toc: true
+      permalink: /drafts/:title/
   - scope:
       path: ''
       type: tabs             # see `site.collections`
@@ -169,6 +177,12 @@ defaults:
       path: assets/js/dist
     values:
       swcache: true
+  - scope:
+      path: _navs
+      type: navs
+    values:
+      layout: nav_page
+      permalink: /:title/
 
 sass:
   style: compressed
